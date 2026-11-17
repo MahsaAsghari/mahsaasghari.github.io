@@ -1,0 +1,3 @@
+# Optional PDF regeneration only. Website publishing needs no dependencies.
+reportlab>=4,<5
+Pillow>=10,<13
