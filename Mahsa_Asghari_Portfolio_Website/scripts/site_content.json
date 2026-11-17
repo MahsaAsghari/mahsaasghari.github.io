@@ -1,0 +1,322 @@
+{
+  "name": "Mahsa Asghari",
+  "title": "Dr.",
+  "degree": "PhD in Physics · Optics",
+  "location": "Kassel, Germany",
+  "email": "mahsa.asghari2091@gmail.com",
+  "introduction": "Experimental optics, laser-based sensing, and optical metrology. From the optical bench to quantitative analysis.",
+  "biography": "I work at the meeting point of experimental optics and quantitative measurement: assembling optical systems, recording camera-based signals, and understanding the physical processes behind them.",
+  "expertise": [
+    {
+      "title": "Optical systems",
+      "text": "Assembly, alignment, calibration, and experimental integration.",
+      "items": [
+        "Optical system assembly & alignment",
+        "Polarization optics",
+        "Camera-based detection"
+      ]
+    },
+    {
+      "title": "Imaging & sensing",
+      "text": "Using interference and speckle to investigate physical processes.",
+      "items": [
+        "Interferometric imaging",
+        "Laser speckle sensing",
+        "Non-contact optical measurement"
+      ]
+    },
+    {
+      "title": "Data & metrology",
+      "text": "Connecting optical signals with meaningful, repeatable measurements.",
+      "items": [
+        "MATLAB · image & signal processing",
+        "Measurement validation & repeatability",
+        "Python & LabVIEW · basic knowledge"
+      ]
+    }
+  ],
+  "background": [
+    {
+      "date": "2024–25",
+      "title": "Visiting PhD Researcher",
+      "organization": "University of Kassel, Germany",
+      "text": "Research experience in experimental optics and interferometric imaging."
+    },
+    {
+      "date": "2016–25",
+      "title": "PhD in Physics (Optics)",
+      "organization": "IASBS, Iran",
+      "text": "Graduated with highest distinction. Research in experimental optics and secondary-speckle-based remote measurement."
+    },
+    {
+      "date": "2023",
+      "title": "Researcher",
+      "organization": "National Elites Foundation, Iran",
+      "text": ""
+    },
+    {
+      "date": "Research",
+      "title": "Research Assistant",
+      "organization": "IASBS, Iran",
+      "text": "Experimental optics research."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "differential-dynamic-matrix",
+      "number": "01",
+      "short": "Speckle dynamics in Fourier space",
+      "title": "Speckle Pattern Analysis Using Differential Dynamic Matrix",
+      "category": "dynamics",
+      "tag": "Computational analysis",
+      "date": "2025",
+      "role": "Co-first author",
+      "institution": "Optics Letters · 50 (19)",
+      "doi": "10.1364/OL.564582",
+      "publication": "Speckle pattern analysis using differential dynamic matrix",
+      "image": "ddm-motion-history",
+      "question": "How can speckle analysis resolve evolving paint-drying dynamics at different spatial and temporal scales?",
+      "abstract": "We extended differential dynamic microscopy to laser speckle patterns, quantifying time- and spatial-frequency-dependent dynamics during the drying of paint layers.",
+      "contribution": [
+        "Contributed to differential-dynamic-matrix analysis of laser speckle patterns.",
+        "Investigated the evolving optical response during paint-layer drying.",
+        "Compared the dynamics of 100 and 200 µm layers across spatial scales."
+      ],
+      "facts": [
+        [
+          "Method",
+          "DDM-based laser speckle analysis"
+        ],
+        [
+          "Samples",
+          "100 & 200 µm paint layers"
+        ],
+        [
+          "Analysis",
+          "Time & spatial frequency"
+        ]
+      ],
+      "result": "DDM-LSA resolved evolving dynamics across spatial scales without direct particle tracking. The 100 µm layer stabilized faster, while the 200 µm layer retained longer-lived activity.",
+      "scope": "The reported comparison concerns the paint layers and acquisition conditions shown in the publication.",
+      "groups": [
+        {
+          "title": "Acquisition and motion history",
+          "intro": "Camera-based laser speckle acquisition captures changing activity in the two paint layers.",
+          "images": [
+            "ddm-setup",
+            "ddm-motion-history"
+          ],
+          "layout": "two"
+        },
+        {
+          "title": "Dynamics across time and spatial scales",
+          "intro": "Lag-time curves and spatial-frequency response quantify how the measured dynamics evolve during drying.",
+          "images": [
+            "ddm-lag-curves",
+            "ddm-spatial-response"
+          ],
+          "layout": "stack"
+        }
+      ],
+      "deck": "Following paint-drying dynamics across spatial and temporal scales, without tracking individual particles."
+    },
+    {
+      "slug": "battery-speckle-sensing",
+      "number": "02",
+      "short": "Remote battery evaluation",
+      "title": "Remote Battery Evaluation by Secondary Speckle Patterns",
+      "category": "sensing",
+      "tag": "Non-contact sensing",
+      "date": "2025",
+      "role": "First author",
+      "institution": "Measurement · Volume 244",
+      "doi": "10.1016/j.measurement.2024.116430",
+      "publication": "Remote battery evaluation by secondary speckle patterns",
+      "image": "battery-setup",
+      "question": "Can vibration-induced changes in a secondary speckle pattern distinguish battery states without direct electrical contact?",
+      "abstract": "I investigated battery states by recording vibration-induced shifts in far-field laser speckle patterns and analyzing their frequency-dependent response.",
+      "contribution": [
+        "Investigated secondary-speckle responses under controlled battery vibration.",
+        "Analyzed correlation-derived pattern displacement and its frequency response.",
+        "Examined full-versus-empty discrimination and changes during NiMH discharge."
+      ],
+      "facts": [
+        [
+          "Illumination",
+          "632.8 nm He–Ne"
+        ],
+        [
+          "Acquisition",
+          "140 frames per second"
+        ],
+        [
+          "Excitation",
+          "Controlled vibration"
+        ]
+      ],
+      "result": "Distinct speckle responses separated the tested full and empty batteries, while signal metrics also followed NiMH discharge.",
+      "scope": "Results concern the tested batteries and vibration conditions; this study does not establish a universal battery-health calibration.",
+      "groups": [
+        {
+          "title": "Experiment and processing",
+          "intro": "The optical experiment connects camera-based speckle recording with displacement and Fourier analysis.",
+          "images": [
+            "battery-setup",
+            "battery-workflow"
+          ],
+          "layout": "two"
+        },
+        {
+          "title": "Full and empty battery discrimination",
+          "intro": "Measured spectral responses and their comparison across the tested vibration conditions.",
+          "images": [
+            "battery-spectra",
+            "battery-comparison"
+          ],
+          "layout": "two"
+        },
+        {
+          "title": "Following discharge",
+          "intro": "Time-dependent optical metrics presented in the source portfolio.",
+          "images": [
+            "battery-discharge-a",
+            "battery-discharge-b"
+          ],
+          "layout": "two"
+        }
+      ],
+      "deck": "Reading the response of vibrating batteries through secondary laser speckle."
+    },
+    {
+      "slug": "powder-dehumidification",
+      "number": "03",
+      "short": "Monitoring powder dehumidification",
+      "title": "Remote Monitoring of Powder Dehumidification",
+      "category": "dynamics",
+      "tag": "Optical metrology",
+      "date": "2026",
+      "role": "Co-first author",
+      "institution": "Scientific Reports · 16, 20806",
+      "doi": "10.1038/s41598-026-51228-0",
+      "publication": "Remote monitoring of powder dehumidification by speckle pattern analysis",
+      "image": "powder-setup",
+      "question": "Can dynamic speckle fluctuations provide a non-contact optical signature of moisture-driven changes in powder?",
+      "abstract": "We used camera-recorded laser speckle to monitor drying in cornstarch powder and compared optical trends with independent surface-profilometry measurements.",
+      "contribution": [
+        "Contributed to non-contact laser-speckle monitoring of powder drying.",
+        "Analyzed time-history speckle patterns during a humidity transition.",
+        "Compared optical trends with independent surface-profilometry measurements."
+      ],
+      "facts": [
+        [
+          "Illumination",
+          "632 nm He–Ne"
+        ],
+        [
+          "Acquisition",
+          "10 frames per second"
+        ],
+        [
+          "Sample",
+          "Cornstarch powder"
+        ]
+      ],
+      "result": "The optical trends agreed with surface profilometry, supporting speckle analysis as a non-invasive way to follow the measured drying process.",
+      "scope": "The study presents an optical signature of the drying process; it does not claim direct, absolute moisture-content measurement.",
+      "groups": [
+        {
+          "title": "Non-contact optical acquisition",
+          "intro": "Laser illumination and camera detection record back-scattered light from the powder.",
+          "images": [
+            "powder-setup"
+          ],
+          "layout": "stack"
+        },
+        {
+          "title": "Speckle-derived dynamics",
+          "intro": "Time-history speckle matrices illustrate the evolving optical activity during dehumidification.",
+          "images": [
+            "powder-time-history"
+          ],
+          "layout": "stack"
+        },
+        {
+          "title": "Independent structural validation",
+          "intro": "Surface-profilometry maps provide an independent view of the structural changes during drying.",
+          "images": [
+            "powder-profilometry"
+          ],
+          "layout": "stack"
+        }
+      ],
+      "deck": "An optical signature of moisture-driven change in cornstarch powder."
+    },
+    {
+      "slug": "remote-current-sensing",
+      "number": "04",
+      "short": "Remote current detection in wires",
+      "title": "Laser Speckle Analysis for Remote Current Detection in Wires",
+      "category": "sensing",
+      "tag": "Laser-based sensing",
+      "date": "2023",
+      "role": "Co-first author",
+      "institution": "Measurement · Volume 219",
+      "doi": "10.1016/j.measurement.2023.113263",
+      "publication": "Laser speckle analysis for remote detection of electric current flowing in wires",
+      "image": "current-setup",
+      "question": "Can optical speckle activity reveal DC current in an insulated wire without direct electrical contact?",
+      "abstract": "We investigated non-contact DC-current sensing using time-resolved laser-speckle patterns scattered from insulated wires, relating the measured optical activity to applied current.",
+      "contribution": [
+        "Contributed to camera-based laser speckle measurements from insulated wires.",
+        "Investigated current-dependent speckle activity using temporal analysis.",
+        "Examined calibration responses across conductor materials and wire diameters."
+      ],
+      "facts": [
+        [
+          "Illumination",
+          "632.8 nm He–Ne"
+        ],
+        [
+          "Acquisition",
+          "25 frames per second"
+        ],
+        [
+          "Measurement",
+          "Non-contact DC-current sensing"
+        ]
+      ],
+      "result": "Current-dependent speckle activity enabled calibration-based estimation across the wire materials and diameters tested.",
+      "scope": "The reported results concern the tested insulated wires, conductor materials, and wire diameters.",
+      "groups": [
+        {
+          "title": "Optical experimental arrangement",
+          "intro": "A laser illuminates the insulated wire while a camera records the scattered speckle.",
+          "images": [
+            "current-setup"
+          ],
+          "layout": "stack"
+        },
+        {
+          "title": "Temporal speckle analysis",
+          "intro": "Co-occurrence matrices and motion-history images reveal current-dependent activity.",
+          "images": [
+            "current-com",
+            "current-motion-history"
+          ],
+          "layout": "two"
+        },
+        {
+          "title": "Quantifying the current response",
+          "intro": "Inertia-moment measurements compare different conductor materials and copper-wire diameters.",
+          "images": [
+            "current-materials",
+            "current-diameters"
+          ],
+          "layout": "two"
+        }
+      ],
+      "deck": "Using current-dependent speckle activity for non-contact electrical sensing."
+    }
+  ],
+  "concept": "Polarization-sensitive OCT — an unpublished research concept."
+}

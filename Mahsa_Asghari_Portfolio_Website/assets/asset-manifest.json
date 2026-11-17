@@ -1,0 +1,325 @@
+[
+  {
+    "name": "mahsa-laboratory",
+    "page": 1,
+    "pdf_xref": 15,
+    "file": "assets/images/portrait.webp",
+    "width": 948,
+    "height": 1264,
+    "crop": [
+      0,
+      150,
+      948,
+      1414
+    ],
+    "fit": "contain",
+    "alt": "Mahsa Asghari working at an optical table wearing laser safety glasses.",
+    "caption": "Laboratory portrait from the supplied portfolio."
+  },
+  {
+    "name": "battery-setup",
+    "page": 3,
+    "pdf_xref": 64,
+    "file": "assets/images/battery-setup.jpeg",
+    "width": 1450,
+    "height": 1026,
+    "crop": [
+      0,
+      0,
+      1450,
+      1026
+    ],
+    "fit": "contain",
+    "alt": "Optical schematic of laser illumination, camera detection and a vibrating battery.",
+    "caption": "Experimental arrangement for secondary-speckle battery evaluation."
+  },
+  {
+    "name": "battery-workflow",
+    "page": 3,
+    "pdf_xref": 65,
+    "file": "assets/images/battery-workflow.jpeg",
+    "width": 1598,
+    "height": 507,
+    "crop": [
+      0,
+      0,
+      1598,
+      507
+    ],
+    "fit": "contain",
+    "alt": "Speckle analysis workflow from correlation to displacement and Fourier analysis.",
+    "caption": "Correlation, displacement estimation and frequency analysis."
+  },
+  {
+    "name": "battery-spectra",
+    "page": 3,
+    "pdf_xref": 70,
+    "file": "assets/images/battery-spectra.jpeg",
+    "width": 604,
+    "height": 312,
+    "crop": [
+      0,
+      0,
+      604,
+      312
+    ],
+    "fit": "contain",
+    "alt": "Fourier response of secondary speckle displacement for full and empty batteries.",
+    "caption": "Measured Fourier response for the tested arrangements."
+  },
+  {
+    "name": "battery-comparison",
+    "page": 3,
+    "pdf_xref": 71,
+    "file": "assets/images/battery-comparison.jpeg",
+    "width": 369,
+    "height": 358,
+    "crop": [
+      0,
+      0,
+      369,
+      358
+    ],
+    "fit": "contain",
+    "alt": "Bar chart comparing measured responses of full and empty batteries.",
+    "caption": "Comparison at applied vibration frequencies and amplitudes."
+  },
+  {
+    "name": "battery-discharge-a",
+    "page": 3,
+    "pdf_xref": 66,
+    "file": "assets/images/battery-discharge-a.jpeg",
+    "width": 493,
+    "height": 455,
+    "crop": [
+      0,
+      0,
+      493,
+      455
+    ],
+    "fit": "contain",
+    "alt": "Battery discharge response plotted against elapsed time.",
+    "caption": "Discharge-monitoring response shown in the source portfolio."
+  },
+  {
+    "name": "battery-discharge-b",
+    "page": 3,
+    "pdf_xref": 67,
+    "file": "assets/images/battery-discharge-b.jpeg",
+    "width": 462,
+    "height": 446,
+    "crop": [
+      0,
+      0,
+      462,
+      446
+    ],
+    "fit": "contain",
+    "alt": "A second battery discharge response plotted against elapsed time.",
+    "caption": "Complementary discharge-monitoring response."
+  },
+  {
+    "name": "ddm-setup",
+    "page": 4,
+    "pdf_xref": 78,
+    "file": "assets/images/ddm-setup.jpeg",
+    "width": 860,
+    "height": 630,
+    "crop": [
+      0,
+      0,
+      860,
+      630
+    ],
+    "fit": "contain",
+    "alt": "Optical setup for camera-based laser speckle acquisition from paint layers.",
+    "caption": "Laser-speckle acquisition for studying paint drying."
+  },
+  {
+    "name": "ddm-motion-history",
+    "page": 4,
+    "pdf_xref": 79,
+    "file": "assets/images/ddm-motion-history.jpeg",
+    "width": 935,
+    "height": 720,
+    "crop": [
+      0,
+      0,
+      935,
+      720
+    ],
+    "fit": "contain",
+    "alt": "Motion-history images showing paint-layer dynamics during drying.",
+    "caption": "Motion-history evolution for 100 and 200 micrometre paint layers."
+  },
+  {
+    "name": "ddm-lag-curves",
+    "page": 4,
+    "pdf_xref": 80,
+    "file": "assets/images/ddm-lag-curves.png",
+    "width": 1010,
+    "height": 495,
+    "crop": [
+      0,
+      0,
+      1010,
+      495
+    ],
+    "fit": "contain",
+    "alt": "Differential dynamic matrix curves as a function of lag time at successive drying times.",
+    "caption": "Fourier-space dynamic analysis as paint dries."
+  },
+  {
+    "name": "ddm-spatial-response",
+    "page": 4,
+    "pdf_xref": 81,
+    "file": "assets/images/ddm-spatial-response.png",
+    "width": 1190,
+    "height": 600,
+    "crop": [
+      0,
+      0,
+      1190,
+      600
+    ],
+    "fit": "contain",
+    "alt": "Spatial-frequency response and relaxation-time scaling plots.",
+    "caption": "Spatial response and relaxation-time scaling."
+  },
+  {
+    "name": "powder-setup",
+    "page": 6,
+    "pdf_xref": 99,
+    "file": "assets/images/powder-setup.jpeg",
+    "width": 1506,
+    "height": 560,
+    "crop": [
+      0,
+      0,
+      1506,
+      560
+    ],
+    "fit": "contain",
+    "alt": "Laser and camera arrangement for back-scattered speckle from a powder sample.",
+    "caption": "Non-contact speckle acquisition from cornstarch powder."
+  },
+  {
+    "name": "powder-profilometry",
+    "page": 6,
+    "pdf_xref": 100,
+    "file": "assets/images/powder-profilometry.jpeg",
+    "width": 2308,
+    "height": 432,
+    "crop": [
+      0,
+      0,
+      2308,
+      432
+    ],
+    "fit": "contain",
+    "alt": "Five surface-profilometry maps at successive drying times, with scale bars and height color scale.",
+    "caption": "Independent surface-profilometry measurements during drying."
+  },
+  {
+    "name": "powder-time-history",
+    "page": 6,
+    "pdf_xref": 101,
+    "file": "assets/images/powder-time-history.jpeg",
+    "width": 1132,
+    "height": 655,
+    "crop": [
+      0,
+      0,
+      1132,
+      655
+    ],
+    "fit": "contain",
+    "alt": "Six time-history speckle matrices recorded during powder dehumidification.",
+    "caption": "Time-history speckle patterns during the humidity transition."
+  },
+  {
+    "name": "current-setup",
+    "page": 7,
+    "pdf_xref": 106,
+    "file": "assets/images/current-setup.jpeg",
+    "width": 1378,
+    "height": 524,
+    "crop": [
+      0,
+      0,
+      1378,
+      524
+    ],
+    "fit": "contain",
+    "alt": "Laser speckle experiment with an insulated wire, DC power supply and camera.",
+    "caption": "Experimental arrangement for remote current sensing."
+  },
+  {
+    "name": "current-com",
+    "page": 7,
+    "pdf_xref": 109,
+    "file": "assets/images/current-com.jpeg",
+    "width": 942,
+    "height": 604,
+    "crop": [
+      0,
+      0,
+      942,
+      604
+    ],
+    "fit": "contain",
+    "alt": "Co-occurrence matrices at different electrical currents.",
+    "caption": "Current-dependent co-occurrence matrices."
+  },
+  {
+    "name": "current-motion-history",
+    "page": 7,
+    "pdf_xref": 110,
+    "file": "assets/images/current-motion-history.jpeg",
+    "width": 937,
+    "height": 592,
+    "crop": [
+      0,
+      0,
+      937,
+      592
+    ],
+    "fit": "contain",
+    "alt": "Motion-history images at different electrical currents.",
+    "caption": "Current-dependent motion-history images."
+  },
+  {
+    "name": "current-materials",
+    "page": 7,
+    "pdf_xref": 107,
+    "file": "assets/images/current-materials.jpeg",
+    "width": 684,
+    "height": 688,
+    "crop": [
+      0,
+      0,
+      684,
+      688
+    ],
+    "fit": "contain",
+    "alt": "Speckle inertia moment plotted against current for different conductor materials.",
+    "caption": "Current response for copper, aluminium and tin conductors."
+  },
+  {
+    "name": "current-diameters",
+    "page": 7,
+    "pdf_xref": 108,
+    "file": "assets/images/current-diameters.jpeg",
+    "width": 628,
+    "height": 688,
+    "crop": [
+      0,
+      0,
+      628,
+      688
+    ],
+    "fit": "contain",
+    "alt": "Speckle inertia moment plotted against current for different copper-wire diameters.",
+    "caption": "Current response for different copper-wire diameters."
+  }
+]
