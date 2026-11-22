@@ -448,6 +448,84 @@ dialog::backdrop { background: #071d1df0; }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior: auto !important; transition-duration: 0s !important; }
 }
+
+/* Custom green animation speed slider */
+
+.speed-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: clamp(7rem, 16vw, 11rem);
+  height: 6px;
+  border: none;
+  border-radius: 99px;
+  outline: none;
+  cursor: pointer;
+
+  background: linear-gradient(
+    to right,
+    var(--lime) 0%,
+    var(--lime) var(--speed-fill, 27.27%),
+    #648273 var(--speed-fill, 27.27%),
+    #648273 100%
+  );
+}
+
+/* Chrome, Safari, Edge */
+.speed-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 3px solid #142f2b;
+  background: var(--lime);
+  box-shadow: 0 0 0 1px #648273;
+  cursor: grab;
+}
+
+/* Firefox */
+.speed-control input[type="range"]::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 3px solid #142f2b;
+  background: var(--lime);
+  box-shadow: 0 0 0 1px #648273;
+  cursor: grab;
+}
+
+.speed-control input[type="range"]:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 6px;
+}
+
+.speed-control output {
+  min-width: 3.5ch;
+  color: var(--lime);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+@keyframes opticalOrbit {
+  from {
+    transform: rotate(19deg);
+  }
+  to {
+    transform: rotate(379deg);
+  }
+}
+
+.bench-orbits {
+  animation: opticalOrbit 65s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bench-orbits {
+    animation: none;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -474,7 +552,20 @@ dialog::backdrop { background: #071d1df0; }
 <a href="https://scholar.google.com/citations?user=hDLRSuoAAAAJ&amp;hl=en"
    target="_blank"
    rel="me noopener noreferrer">
-  <span class="profile-icon scholar" aria-hidden="true">G</span>
+
+<span class="profile-icon scholar" aria-hidden="true">
+  <svg width="15" height="15"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="1.5"
+       stroke-linecap="round"
+       stroke-linejoin="round">
+    <path d="m2 9 10-5 10 5-10 5-10-5Z"/>
+    <path d="M6 11v6c3.5 3 8.5 3 12 0v-6"/>
+    <path d="M22 9v7"/>
+  </svg>
+</span>
   Google Scholar
 </a></div></div>
         </div>
@@ -636,7 +727,37 @@ dialog::backdrop { background: #071d1df0; }
           <article><div class="study-drawing"><canvas data-scene="interference" aria-hidden="true"></canvas><span>Interference</span></div><h3>Imaging &amp; sensing</h3><p>I use polarization optics, interferometry, and laser speckle to measure changes without touching the sample.</p><ul><li>Interferometric imaging</li><li>Camera-based detection</li></ul></article>
           <article><div class="study-drawing speckle-poster"><canvas data-scene="speckle" aria-hidden="true"></canvas><span>Laser speckle</span></div><h3>Image analysis</h3><p>I analyze how speckle patterns change over time and test those measurements against independent observations.</p><ul><li>MATLAB for image &amp; signal analysis</li><li>Basic Python &amp; LabVIEW</li></ul></article>
         </div>
-        <div class="motion-note"><p>The speckle simulation adds scattered waves whose phases change over time.</p><div class="scene-controls"><label class="speed-control" hidden>Speckle speed <select aria-label="Speckle speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label><button type="button" class="motion-toggle" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">Pause motion</span></button></div></div>
+
+<div class="motion-note">
+  <p>Adjust the speed of all three simulations: optical systems, interference, and laser speckle.</p>
+
+  <div class="scene-controls">
+    <label class="speed-control" hidden>
+      <span>Animation speed</span>
+
+      <input
+        type="range"
+        id="animation-speed"
+        min="0.25"
+        max="3"
+        step="0.25"
+        value="1"
+        aria-label="Speed of all three animations"
+      >
+
+      <output id="animation-speed-value"
+              for="animation-speed">1×</output>
+    </label>
+
+    <button type="button"
+            class="motion-toggle"
+            aria-pressed="false"
+            hidden>
+      <span class="motion-icon" aria-hidden="true"></span>
+      <span class="motion-label">Pause motion</span>
+    </button>
+  </div>
+</div>
       </div>
     </section>
 
@@ -656,7 +777,20 @@ dialog::backdrop { background: #071d1df0; }
 <a href="https://scholar.google.com/citations?user=hDLRSuoAAAAJ&amp;hl=en"
    target="_blank"
    rel="me noopener noreferrer">
-  <span class="profile-icon scholar" aria-hidden="true">G</span>
+
+<span class="profile-icon scholar" aria-hidden="true">
+  <svg width="15" height="15"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="1.5"
+       stroke-linecap="round"
+       stroke-linejoin="round">
+    <path d="m2 9 10-5 10 5-10 5-10-5Z"/>
+    <path d="M6 11v6c3.5 3 8.5 3 12 0v-6"/>
+    <path d="M22 9v7"/>
+  </svg>
+</span>
   Google Scholar
 </a></div><p class="work-status">Kassel · Authorized to work full-time in Germany</p></div>
       </div>
@@ -1395,7 +1529,7 @@ function interference(s, t) {
     const now = performance.now();
     const delta = Math.min((now - previousTime) / 1000, .12);
     previousTime = now;
-    time += delta;
+    time += delta * speed;
     speckleTime += delta * speed;
     scenes.forEach(scene => { if (scene.visible) draw(scene); });
     frame = window.setTimeout(loop, Math.max(8, frameMillis - (performance.now() - now)));
@@ -1432,10 +1566,36 @@ function interference(s, t) {
     paused = !paused;
     syncMotion();
   }));
-  speedControl.hidden = false;
-  speedControl.querySelector('select').addEventListener('change', event => {
-    speed = Number(event.target.value);
-  });
+  
+const speedSlider = speedControl.querySelector('#animation-speed');
+const speedDisplay = speedControl.querySelector('#animation-speed-value');
+
+function updateAnimationSpeed() {
+  speed = Number(speedSlider.value);
+
+  speedDisplay.textContent = `${speed}×`;
+
+  const min = Number(speedSlider.min);
+  const max = Number(speedSlider.max);
+
+  const percentage = 100 * (speed - min) / (max - min);
+
+  speedSlider.style.setProperty(
+    '--speed-fill',
+    `${percentage}%`
+  );
+
+  speedSlider.setAttribute(
+    'aria-valuetext',
+    `${speed} times normal speed`
+  );
+}
+
+speedSlider.addEventListener('input', updateAnimationSpeed);
+
+updateAnimationSpeed();
+speedControl.hidden = false;
+
   reduced.addEventListener('change', event => {
     paused = event.matches;
     syncMotion();
